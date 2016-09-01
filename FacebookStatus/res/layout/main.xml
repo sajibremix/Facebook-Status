@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/background">
+
+	<TextView android:id="@+id/login_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+	    android:textColor="#FFFFFF"/>
+
+	<EditText
+	    android:id="@+id/statusis"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:ems="10"
+	    android:inputType="textMultiLine" 
+	    android:textColor="#a2f60e"
+        android:textStyle="bold"
+        android:textSize="20sp"/>
+
+	<Button
+	    android:id="@+id/btn_post"
+	    android:layout_width="150dp"
+	    android:layout_height="wrap_content"
+	    android:layout_gravity="center_horizontal"
+	    android:background="@drawable/postbutton" />
+
+    <Button
+        android:id="@+id/btn_clear_credentials"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/logout_fb" />
+    
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        ads:adSize="BANNER"
+        ads:adUnitId="@string/addID">
+    </com.google.android.gms.ads.AdView>
+    
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adView2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        ads:adSize="BANNER"
+        ads:adUnitId="@string/addID">
+    </com.google.android.gms.ads.AdView>
+    
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adView3"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        ads:adSize="BANNER"
+        ads:adUnitId="@string/addID">
+    </com.google.android.gms.ads.AdView>
+       
+</LinearLayout>
